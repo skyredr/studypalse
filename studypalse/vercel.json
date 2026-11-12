@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "studypalse/study_pulse/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "studypalse/study_pulse/wsgi.py"
+    }
+  ]
+}
