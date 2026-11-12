@@ -1,14 +1,15 @@
 {
+  "version": 2,
   "builds": [
     {
-      "src": "studypalse/study_pulse/wsgi.py",
+      "src": "api/index.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "studypalse/study_pulse/wsgi.py"
+      "dest": "api/index.py"
     }
   ]
 }
